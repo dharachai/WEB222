@@ -1,0 +1,277 @@
+/******************************************************************** 
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assignment for my use. 
+I also declare that no part of this assignment has been distributed to other students. 
+Name:  Dennapa Harachai                    
+Dated: November 25,2018*/
+
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans|PT Serif');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"); /*animation*/
+
+html, body {
+    padding:0;
+    margin: 0;
+    font-family : "Courgette",sans-serif; 
+    height: 100%;
+}
+ body{
+    box-sizing: border-box;
+}
+
+
+ .welcome{
+    background-image: linear-gradient(to right, #ee9ca7 0%, #ffdde1 51%, #ee9ca7 100%);    
+    display: flex; 
+    padding-left: 40px;
+    height: 100%;
+   
+  }
+
+.welcome h1 {
+    padding-top: 70px;
+    color :purple;
+    font-size: 3.5em; 
+    font-weight: bold;
+    text-align: center;
+    font-family: "Courgette",sans-serif; 
+    flex:20%;
+
+  }
+
+ #welcomePage {
+    padding: 120px 30px 30px 30px;
+    font-size: 1.7em; 
+    text-indent: 3em;
+    flex:80%;
+  }
+  .welcome img{
+    padding: 100px 40px 50px 40px;
+  }
+ 
+ .w3-bar {
+    position:static;
+    padding: 8px;
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%); 
+}
+
+ .w3-bar a{
+    text-decoration: none;
+    font-size: .75em;
+    font-weight: bold;
+    padding: 10px 30px 10px 50px;
+}
+
+ .w3-bar a:hover{
+        color: pink;
+}
+
+
+main {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+article{
+    display: grid;
+    flex: 75%;
+    padding-left: 20px;
+}
+
+aside {
+    display: grid;
+    margin: 1.5em;
+    flex: 25%;
+}
+
+ .w3-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+ .item-container-inner{
+    border: 2px solid pink;
+    border-radius: 15px;
+    padding: 10px;
+    font-family : "Courgette"; 
+    font-size: .75em;
+
+ }
+
+ .w3-container h1{
+    font-family : "Courgette"; 
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: left;
+
+ }
+
+ .item-description h3{
+    font-family : "Courgette"; 
+    font-size: 1.75em;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    margin-top: 30px;
+ }
+ .item-description h4{
+    font-family : "Courgette"; 
+    font-size: 1.5em;
+ }
+.item-container-inner img{
+    border-radius: 2em;
+    margin: 10px;
+    float: left; 
+    height: 300px;
+    cursor: pointer;
+
+}
+
+h2{
+    margin-top: 65px;
+    margin-right: 40px; 
+    margin-left: 40px ; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; 
+    font-family: 'PT Serif';
+    font-size: 2em;
+    font-weight: bold;    color: #61045F; 
+    background-color: rgba(238, 156, 167, 0.5); 
+    border-radius: 2em;
+
+}
+
+h5 {
+    margin-top: 50px;
+    padding:10 px;
+    color:purple;
+    font-family: 'PT Serif';
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+ .addMe{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    font-family:'PT Serif';
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: #ee9ca7;
+}
+
+ .addMe:hover{
+     background-color: wheat;
+ }
+ *************************************
+
+
+ #contact{
+    text-align: center;
+}
+
+.myContact form {
+   display: grid;
+   margin-top: 3em;
+   padding: 2em;
+   border: 1px solid black;
+   max-width: 400px;
+   min-width: 250px;
+   margin-left: auto;
+   margin-right: auto;
+   grid-template-columns: 0.3fr 1fr;
+   align-items: center;
+   grid-gap: 20px;
+ }
+
+ .commentButton{
+     display: inline-block;
+     grid-column: 2/3;
+     grid-gap: 40px;
+
+   }
+
+ input[type="submit"],
+ input[type="reset"] {
+ width: 100px;
+ background-color: #ee9ca7;
+ color: black;
+ padding: 10px;
+ font-size: 1.25em;
+}
+
+   input[type="submit"]:hover,
+   input[type="submit"]:focus,
+   input[type="reset"]:hover,
+   input[type="reset"]:focus {
+ background-color: red;
+}
+*********************************************************
+
+
+
+aside .bag{
+   font-family:'PT Serif';
+   color: purple;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 50px;
+   margin-left: 50px;
+}
+
+
+.order-summary {
+   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+   font-size: 1.25em;
+   display: grid;
+   grid-template-columns: auto ;
+   grid-template-rows: auto auto auto auto;
+   grid-gap: 10px;
+   padding: 20px;
+   margin: 10px 40px 10px 40px;
+   border: #AA076B solid 1px;
+   border-radius: 2em;
+
+}
+aside ul {
+   font-family:'PT Serif';
+   list-style-type: none;
+}
+
+
+.checkout-button{
+   font-family:'PT Serif';
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-weight: bold;
+   border-radius: 2px;
+   padding: 7.5px;
+   font-size: 1.5em;
+   background-color: #ee9ca7;
+}
+
+.checkout-button:hover{
+   background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a 51%, #cb2d3e 100%);
+}
+
+ footer{
+     margin-top: 2px;
+     text-align: center;
+     padding: .5px;
+     font-size: 1em;
+     background: rgb(248, 176, 224);
+ }
+
+@media screen and (max-width: 1024px) {
+   * {
+       flex: 100%;
+   }
+}
